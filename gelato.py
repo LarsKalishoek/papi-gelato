@@ -36,8 +36,10 @@ def stap1():
         print("Sorry, dat snap ik niet...")
         stap1()
     if int(bollen) <= 3:
+        smaak(bollen)
         stap2(bollen)
     elif int(bollen) <= 8:
+        smaak(bollen)
         print("Dan krijgt u van mij een bakje met " + bollen + " bolletje")
         hoorn = "bakje"
         stap3(hoorn, bollen)
@@ -47,6 +49,15 @@ def stap1():
     else:
         print("Sorry, dat snap ik niet...")
         stap1()
+def smaak(bollen):
+    x = 0
+    while x < int(bollen):
+        x += 1
+        check = input("Welke smaak wilt u voor bolletje nummer "  + str(x) + "? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? ").lower()
+        if check != "a" and check != "c" and check != "m" and check != "v":
+            x -= 1
+            print("Sorry, dat snap ik niet...")
+
 
 
 print("Welkom bij Papi Gelato je mag alle smaken kiezen zolang het maar vanille ijs is.")
