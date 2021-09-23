@@ -60,7 +60,7 @@ def smaak(bollen):
 
 
 
-print("Welkom bij Papi Gelato je mag alle smaken kiezen zolang het maar vanille ijs is.")
+print("Welkom bij Papi Gelato.")
 stap1()
 
 # bollentjes = int(bollen)
